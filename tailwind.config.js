@@ -14,6 +14,7 @@ module.exports = {
           accent: '#9333EA',        // Bright accent purple
           mediumPurple: '#6A5ACD',  // Medium-dark purple
           lightPurple: '#B19CD9',   // Light lavender/pale purple
+          soft: '#C8B9E4',          // Soft lavender background
         },
       },
     },

@@ -7,37 +7,66 @@
     "personalApproach": "Create a website offering downloadable and printable mandala pages for leisure or therapeutic use, and explore AI-generated mockups to simulate a prototype product page.",
     "programsUsed": ["Figma"],
     "externalProgramsUsed": ["Procreate", "Sora"],
-    "progress": 0.88
+    "progress": 0.88,
+    "imageFit": "contain",
+    "images": [
+      "/assets/projects/mandalamore/mandalamore-1-2.png",
+      "/assets/projects/mandalamore/mandalamore-2.png",
+      "/assets/projects/mandalamore/mandalamore-2-2.png",
+      "/assets/projects/mandalamore/mandalamore-3.png",
+      "/assets/projects/mandalamore/mandalamore-4.png",
+      "/assets/projects/mandalamore/mandalamore-1.png"
+    ]
   },
   {
-    "projectName": "",
+    "projectName": "No Matter The Weather",
     "module": "",
     "projectType": "",
     "task": "",
     "personalApproach": "",
     "programsUsed": [],
     "externalProgramsUsed": [],
-    "progress": null
+    "progress": null,
+    "images": [
+      "/assets/projects/nomattertheweather/nomattertheweather-1.png",
+      "/assets/projects/nomattertheweather/nomattertheweather-2.png",
+      "/assets/projects/nomattertheweather/nomattertheweather-2-1.png",
+      "/assets/projects/nomattertheweather/nomattertheweather-3.png"
+    ]
   },
   {
-    "projectName": "",
+    "projectName": "Rezepte Sammlung",
     "module": "",
     "projectType": "",
     "task": "",
     "personalApproach": "",
     "programsUsed": [],
     "externalProgramsUsed": [],
-    "progress": null
+    "progress": null,
+    "images": [
+      "/assets/projects/rezepte-sammlung/rezepte-sammlung-1.png",
+      "/assets/projects/rezepte-sammlung/rezepte-sammlung-2.png",
+      "/assets/projects/rezepte-sammlung/rezepte-sammlung-3.png",
+      "/assets/projects/rezepte-sammlung/rezepte-sammlung-4.png",
+      "/assets/projects/rezepte-sammlung/rezepte-sammlung-5.png"
+    ]
   },
   {
-    "projectName": "",
+    "projectName": "Soul to Skin",
     "module": "",
     "projectType": "",
     "task": "",
     "personalApproach": "",
     "programsUsed": [],
     "externalProgramsUsed": [],
-    "progress": null
+    "progress": null,
+    "images": [
+      "/assets/projects/soultoskin/soultoskin-1.png",
+      "/assets/projects/soultoskin/soultoskin-2.png",
+      "/assets/projects/soultoskin/soultoskin-3.png",
+      "/assets/projects/soultoskin/soultoskin-4.png",
+      "/assets/projects/soultoskin/soultoskin-5.png"
+    ]
   }
 ]
 
