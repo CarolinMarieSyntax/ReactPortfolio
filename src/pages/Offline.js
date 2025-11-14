@@ -73,15 +73,14 @@ function Offline() {
           {offlineImages.map((image, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg border border-syntax-mediumPurple/30 bg-black/20 aspect-square"
+              className="relative overflow-hidden rounded-lg border border-syntax-mediumPurple/30 bg-black/20 aspect-square"
             >
               <img
                 src={image}
                 alt={`Gallery ${index + 1}`}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-syntax-darker/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
           ))}
         </div>
