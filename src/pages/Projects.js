@@ -28,6 +28,9 @@ import soultoskin3 from '../assets/projects/soultoskin/soultoskin-3.png';
 import soultoskin4 from '../assets/projects/soultoskin/soultoskin-4.png';
 import soultoskin5 from '../assets/projects/soultoskin/soultoskin-5.png';
 
+import xylophon1 from '../assets/projects/rainbow-xylophone/xylophon-1.png';
+import xylophon2 from '../assets/projects/rainbow-xylophone/xylophon-2.png';
+
 const imageMap = {
   '/assets/projects/mandalamore/mandalamore-1.png': mandalamore1,
   '/assets/projects/mandalamore/mandalamore-1-2.png': mandalamore12,
@@ -49,6 +52,8 @@ const imageMap = {
   '/assets/projects/soultoskin/soultoskin-3.png': soultoskin3,
   '/assets/projects/soultoskin/soultoskin-4.png': soultoskin4,
   '/assets/projects/soultoskin/soultoskin-5.png': soultoskin5,
+  '/assets/projects/rainbow-xylophone/xylophon-1.png': xylophon1,
+  '/assets/projects/rainbow-xylophone/xylophon-2.png': xylophon2,
 };
 
 const Projects = () => {
@@ -76,7 +81,7 @@ const Projects = () => {
             Projects
           </h1>
           <div className="w-24 h-1 bg-syntax-mediumPurple mx-auto mb-6"></div>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto uppercase tracking-wider">
+          <p className="text-lg text-gray-400 mx-auto uppercase tracking-wider whitespace-nowrap">
             Browse recent prototypes, experiments, and collaboration pieces.
           </p>
         </div>

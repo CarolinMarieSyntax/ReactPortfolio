@@ -66,6 +66,20 @@
       "/assets/projects/soultoskin/soultoskin-4.png",
       "/assets/projects/soultoskin/soultoskin-5.png"
     ]
+  },
+  {
+    "projectName": "Rainbow Xylophone",
+    "module": "Module 2",
+    "projectType": "Practice",
+    "task": "Creating fields of different color that light up/show up when pressing the corresponding key on keyboard (ex. 1-9).",
+    "personalApproach": "Linking this idea to sound, I started playing around with the idea of creating an instrument, so I started with a rainbow xylophone but expanding to more keys etc.",
+    "programsUsed": ["Cursor"],
+    "externalProgramsUsed": [],
+    "progress": 0.25,
+    "images": [
+      "/assets/projects/rainbow-xylophone/xylophon-1.png",
+      "/assets/projects/rainbow-xylophone/xylophon-2.png"
+    ]
   }
 ]
 

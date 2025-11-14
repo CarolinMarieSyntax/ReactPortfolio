@@ -74,7 +74,12 @@ void main() {
   
   float intensity = (rgb.r + rgb.g + rgb.b) / 3.0;
   vec3 customColor = intensity * uCustomColor;
-  vec3 finalColor = mix(rgb, customColor, step(0.5, uUseCustomColor));
+  
+  // Add blueish tones - blend between purple and blue
+  vec3 blueTint = vec3(0.3, 0.5, 0.9); // Blue color
+  vec3 blendedColor = mix(customColor, blueTint * intensity, 0.3); // 30% blue blend
+  
+  vec3 finalColor = mix(rgb, blendedColor, step(0.5, uUseCustomColor));
   
   float alpha = length(rgb) * uOpacity;
   fragColor = vec4(finalColor, alpha);

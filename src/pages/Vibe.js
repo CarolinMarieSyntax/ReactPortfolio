@@ -29,17 +29,49 @@ function Vibe() {
         <div className="max-w-4xl mx-auto">
           {/* About Section */}
           <Card className="mb-8">
-            <div className="w-16 h-0.5 bg-syntax-lightPurple mb-6"></div>
             <h2 className="text-3xl font-bold text-white mb-6 uppercase tracking-wide">About</h2>
+            <p className="text-gray-300 text-lg leading-relaxed mb-4">
+              Hello and welcome to my page! My name is <span className="font-semibold text-syntax-lightPurple">Carolin Marie Pütz</span>. 
+              I am currently 26 years old and enrolled as a student at Syntax Institut learning about web development.
+            </p>
             <p className="text-gray-400 text-base leading-relaxed mb-4">
-              <span className="font-semibold text-syntax-lightPurple">Carolin Marie Pütz</span>, 
-              web development student at Syntax Institut. Focused on mastering modern web technologies 
-              and creating functional, user-centered digital experiences.
+              Focused on mastering modern web technologies and creating functional, user-centered digital experiences.
             </p>
             <p className="text-gray-400 text-base leading-relaxed">
-              Continuously exploring new technologies, refining design skills, and building expertise 
-              in full-stack development. Committed to delivering high-quality, performant web solutions.
+              Continuously exploring new technologies, refining design skills, and building expertise in full-stack development. 
+              Committed to delivering high-quality, performant web solutions.
             </p>
+          </Card>
+
+          {/* AI-Assisted Coding Section */}
+          <Card className="relative overflow-hidden mb-8">
+            <div className="absolute inset-0 bg-gradient-to-br from-syntax-purple/10 via-transparent to-syntax-mediumPurple/10 opacity-50"></div>
+            <div className="relative">
+              <div className="w-16 h-0.5 bg-syntax-lightPurple mb-6"></div>
+              <div>
+                <h2 className="text-3xl font-bold text-white mb-4 tracking-wide">AI-Powered Development</h2>
+                <p className="text-gray-300 text-base leading-relaxed mb-4">
+                  I'm building the future of web development by <span className="text-syntax-lightPurple font-semibold">collaborating with artificial intelligence</span> to craft digital experiences. 
+                  This isn't about replacing creativity—it's about amplifying it. AI becomes my co-pilot, handling repetitive tasks 
+                  and suggesting optimizations while I focus on the bigger picture: architecture, user experience, and bringing ideas to life.
+                </p>
+                <p className="text-gray-400 text-sm leading-relaxed italic">
+                  Every line of code is a conversation between human intuition and machine intelligence, resulting in faster iterations, 
+                  cleaner solutions, and more time to push boundaries.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-6 pt-6 border-t border-syntax-mediumPurple/30">
+                <span className="px-3 py-1 text-xs uppercase tracking-wider text-syntax-lightPurple bg-syntax-mediumPurple/20 border border-syntax-mediumPurple/40 rounded-full">
+                  AI-Assisted
+                </span>
+                <span className="px-3 py-1 text-xs uppercase tracking-wider text-syntax-lightPurple bg-syntax-mediumPurple/20 border border-syntax-mediumPurple/40 rounded-full">
+                  Human-Driven
+                </span>
+                <span className="px-3 py-1 text-xs uppercase tracking-wider text-syntax-lightPurple bg-syntax-mediumPurple/20 border border-syntax-mediumPurple/40 rounded-full">
+                  Future-Forward
+                </span>
+              </div>
+            </div>
           </Card>
 
           {/* Interests Section */}
@@ -92,7 +124,7 @@ function Vibe() {
           </div>
 
           {/* Skills & Learning Section */}
-          <Card>
+          <Card className="mb-8">
             <div className="w-16 h-0.5 bg-syntax-lightPurple mb-6"></div>
             <h2 className="text-3xl font-bold text-white mb-8 uppercase tracking-wide">Current Focus</h2>
             <div className="grid md:grid-cols-3 gap-8">

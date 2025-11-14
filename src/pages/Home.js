@@ -1,6 +1,8 @@
 import React from 'react';
 import syntaxLogo from '../assets/logo-syntax.png';
 import Plasma from '../components/Plasma';
+// Import header video
+import headerVideo from '../assets/header-video.mp4';
 
 function Home() {
   return (
@@ -15,6 +17,20 @@ function Home() {
           mouseInteractive={true}
         />
       </div>
+      
+      {/* Soft Header Video */}
+      <div className="relative w-full h-64 md:h-80 lg:h-96 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-syntax-darker/70 via-syntax-darker/50 to-syntax-darker z-10"></div>
+        <video 
+          src={headerVideo} 
+          autoPlay
+          muted
+          playsInline
+          loop
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        />
+      </div>
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center">
           <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-8 tracking-tight">
@@ -33,32 +49,6 @@ function Home() {
               alt="Syntax Institut Logo" 
               className="h-8 object-contain"
             />
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-6 mt-20 max-w-5xl mx-auto">
-            <div className="bg-syntax-darkBlue p-8 border border-syntax-mediumPurple/40 hover:border-syntax-lightPurple transition-all duration-300 hover:shadow-lg hover:shadow-syntax-purple/20">
-              <h3 className="text-xl font-bold text-white mb-3 uppercase tracking-wide">CSS Components</h3>
-              <div className="w-12 h-0.5 bg-syntax-lightPurple mb-4"></div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                A collection of reusable CSS components and design system
-              </p>
-            </div>
-            
-            <div className="bg-syntax-darkBlue p-8 border border-syntax-mediumPurple/40 hover:border-syntax-lightPurple transition-all duration-300 hover:shadow-lg hover:shadow-syntax-purple/20">
-              <h3 className="text-xl font-bold text-white mb-3 uppercase tracking-wide">Projects</h3>
-              <div className="w-12 h-0.5 bg-syntax-lightPurple mb-4"></div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Completed web development projects and professional work
-              </p>
-            </div>
-            
-            <div className="bg-syntax-darkBlue p-8 border border-syntax-mediumPurple/40 hover:border-syntax-lightPurple transition-all duration-300 hover:shadow-lg hover:shadow-syntax-purple/20">
-              <h3 className="text-xl font-bold text-white mb-3 uppercase tracking-wide">Vibe</h3>
-              <div className="w-12 h-0.5 bg-syntax-lightPurple mb-4"></div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Professional background and approach to web development
-              </p>
-            </div>
           </div>
         </div>
       </div>
