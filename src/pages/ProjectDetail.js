@@ -33,6 +33,8 @@ import soultoskin5 from '../assets/projects/soultoskin/soultoskin-5.png';
 import xylophon1 from '../assets/projects/rainbow-xylophone/xylophon-1.png';
 import xylophon2 from '../assets/projects/rainbow-xylophone/xylophon-2.png';
 
+import portfolio1 from '../assets/projects/portfolio/portfolio.png';
+
 const imageMap = {
   '/assets/projects/mandalamore/mandalamore-1.png': mandalamore1,
   '/assets/projects/mandalamore/mandalamore-1-2.png': mandalamore12,
@@ -56,6 +58,7 @@ const imageMap = {
   '/assets/projects/soultoskin/soultoskin-5.png': soultoskin5,
   '/assets/projects/rainbow-xylophone/xylophon-1.png': xylophon1,
   '/assets/projects/rainbow-xylophone/xylophon-2.png': xylophon2,
+  '/assets/projects/portfolio/portfolio.png': portfolio1,
 };
 
 const allProjects = projectsData.filter((project) => project.projectName && project.projectName.trim().length > 0);

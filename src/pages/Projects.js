@@ -31,6 +31,8 @@ import soultoskin5 from '../assets/projects/soultoskin/soultoskin-5.png';
 import xylophon1 from '../assets/projects/rainbow-xylophone/xylophon-1.png';
 import xylophon2 from '../assets/projects/rainbow-xylophone/xylophon-2.png';
 
+import portfolio1 from '../assets/projects/portfolio/portfolio.png';
+
 const imageMap = {
   '/assets/projects/mandalamore/mandalamore-1.png': mandalamore1,
   '/assets/projects/mandalamore/mandalamore-1-2.png': mandalamore12,
@@ -54,6 +56,7 @@ const imageMap = {
   '/assets/projects/soultoskin/soultoskin-5.png': soultoskin5,
   '/assets/projects/rainbow-xylophone/xylophon-1.png': xylophon1,
   '/assets/projects/rainbow-xylophone/xylophon-2.png': xylophon2,
+  '/assets/projects/portfolio/portfolio.png': portfolio1,
 };
 
 const Projects = () => {
@@ -109,15 +112,14 @@ const Projects = () => {
                       Preview coming soon
                     </div>
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-syntax-darker via-transparent to-transparent opacity-80" />
-                  <div className="absolute bottom-4 left-4 right-4 space-y-1 text-white">
+                </div>
+                <div className="space-y-4 p-6 text-sm text-gray-200">
+                  <div className="space-y-1">
                     <span className="text-xs uppercase tracking-[0.35em] text-syntax-lightPurple">
                       {project.module || 'Module'} • {project.projectType || 'Project Type'}
                     </span>
-                    <h2 className="text-xl font-semibold uppercase tracking-wide">{project.projectName}</h2>
+                    <h2 className="text-xl font-semibold uppercase tracking-wide text-white">{project.projectName}</h2>
                   </div>
-                </div>
-                <div className="space-y-4 p-6 text-sm text-gray-200">
                   {project.task && (
                     <p className="leading-relaxed text-gray-300">{project.task}</p>
                   )}

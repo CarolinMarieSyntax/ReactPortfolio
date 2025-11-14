@@ -77,8 +77,21 @@
     "externalProgramsUsed": [],
     "progress": 0.25,
     "images": [
-      "/assets/projects/rainbow-xylophone/xylophon-1.png",
-      "/assets/projects/rainbow-xylophone/xylophon-2.png"
+      "/assets/projects/rainbow-xylophone/xylophon-2.png",
+      "/assets/projects/rainbow-xylophone/xylophon-1.png"
+    ]
+  },
+  {
+    "projectName": "Portfolio",
+    "module": "Module 3",
+    "projectType": "Practice with React",
+    "task": "Creating a project with the React Format using Tailwind and deploying it through Vercel.",
+    "personalApproach": "Showing all of my current projects and also adding a small 'offline' gallery section showing the creators offline life.",
+    "programsUsed": ["Cursor"],
+    "externalProgramsUsed": ["Midjourney"],
+    "progress": 0.70,
+    "images": [
+      "/assets/projects/portfolio/portfolio.png"
     ]
   }
 ]
