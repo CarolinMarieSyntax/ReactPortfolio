@@ -1,8 +1,8 @@
 import React from 'react';
 import syntaxLogo from '../assets/logo-syntax.png';
 import Plasma from '../components/Plasma';
-// Import header video
-import headerVideo from '../assets/header-video.mp4';
+// Import header image
+import headerImage from '../assets/header-image.png';
 
 function Home() {
   return (
@@ -18,15 +18,12 @@ function Home() {
         />
       </div>
       
-      {/* Soft Header Video */}
+      {/* Soft Header Image */}
       <div className="relative w-full h-64 md:h-80 lg:h-96 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-syntax-darker/70 via-syntax-darker/50 to-syntax-darker z-10"></div>
-        <video 
-          src={headerVideo} 
-          autoPlay
-          muted
-          playsInline
-          loop
+        <div className="absolute inset-0 bg-gradient-to-b from-syntax-darker/10 via-syntax-darker/10 to-syntax-darker/10 z-10"></div>
+        <img 
+          src={headerImage} 
+          alt="Header" 
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
       </div>
