@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from '../components/CSSComponents/Card';
-import syntaxLogo from '../assets/logo-syntax.png';
 import Plasma from '../components/Plasma';
 
 function Vibe() {

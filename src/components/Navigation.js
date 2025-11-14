@@ -50,14 +50,14 @@ function Navigation() {
               Home
             </Link>
             <Link
-              to="/css"
+              to="/offline"
               className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors ${
-                isActive('/css') 
+                isActive('/offline') 
                   ? 'text-syntax-lightPurple border-b-2 border-syntax-mediumPurple' 
                   : 'text-gray-400 hover:text-syntax-lightPurple'
               }`}
             >
-              CSS
+              Offline
             </Link>
             <div className="relative flex items-center">
               <Link
