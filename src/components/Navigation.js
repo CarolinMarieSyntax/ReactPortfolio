@@ -7,6 +7,7 @@ import { slugify } from '../utils/slugify';
 function Navigation() {
   const location = useLocation();
   const [projectsOpen, setProjectsOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const isActive = (path) => {
     return location.pathname === path;
@@ -26,6 +27,7 @@ function Navigation() {
 
   useEffect(() => {
     setProjectsOpen(false);
+    setMobileMenuOpen(false);
   }, [location.pathname, location.hash]);
 
   return (
@@ -33,12 +35,14 @@ function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center gap-3 text-xl font-bold text-white hover:text-syntax-lightPurple transition-colors uppercase tracking-wide">
-              <img src={syntaxLogo} alt="Syntax Logo" className="h-8 w-auto" />
-              <span>Carolin Marie Pütz</span>
+            <Link to="/" className="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl font-bold text-white hover:text-syntax-lightPurple transition-colors uppercase tracking-wide">
+              <img src={syntaxLogo} alt="Syntax Logo" className="h-6 sm:h-8 w-auto" />
+              <span className="hidden sm:inline">Carolin Marie Pütz</span>
+              <span className="sm:hidden">CMP</span>
             </Link>
           </div>
-          <div className="flex space-x-1">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex space-x-1">
             <Link
               to="/"
               className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors ${
@@ -123,8 +127,123 @@ function Navigation() {
             >
               Vibe
             </Link>
+            <Link
+              to="/kontakt"
+              className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors ${
+                isActive('/kontakt') 
+                  ? 'text-syntax-lightPurple border-b-2 border-syntax-mediumPurple' 
+                  : 'text-gray-400 hover:text-syntax-lightPurple'
+              }`}
+            >
+              Kontakt
+            </Link>
           </div>
+          {/* Mobile Menu Button */}
+          <button
+            type="button"
+            className="md:hidden p-2 text-gray-400 hover:text-syntax-lightPurple transition-colors"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {mobileMenuOpen ? (
+                <path d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
         </div>
+        {/* Mobile Navigation Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-syntax-mediumPurple/30 py-4">
+            <div className="flex flex-col space-y-2">
+              <Link
+                to="/"
+                className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors ${
+                  isActive('/') 
+                    ? 'text-syntax-lightPurple border-l-4 border-syntax-mediumPurple' 
+                    : 'text-gray-400 hover:text-syntax-lightPurple'
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                to="/offline"
+                className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors ${
+                  isActive('/offline') 
+                    ? 'text-syntax-lightPurple border-l-4 border-syntax-mediumPurple' 
+                    : 'text-gray-400 hover:text-syntax-lightPurple'
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Offline
+              </Link>
+              <div className="px-4 py-2">
+                <Link
+                  to="/projects"
+                  className={`text-xs font-bold uppercase tracking-wider transition-colors ${
+                    isActive('/projects')
+                      ? 'text-syntax-lightPurple' 
+                      : 'text-gray-400 hover:text-syntax-lightPurple'
+                  }`}
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    setProjectsOpen(false);
+                  }}
+                >
+                  Projects
+                </Link>
+                {projectLinks.length > 0 && (
+                  <ul className="mt-2 ml-4 space-y-1">
+                    {projectLinks.map((project) => (
+                      <li key={project.to}>
+                        <Link
+                          to={project.to}
+                          className="block px-3 py-1 text-xs font-semibold uppercase tracking-wide text-gray-400 hover:text-syntax-lightPurple transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {project.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+              <Link
+                to="/vibe"
+                className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors ${
+                  isActive('/vibe') 
+                    ? 'text-syntax-lightPurple border-l-4 border-syntax-mediumPurple' 
+                    : 'text-gray-400 hover:text-syntax-lightPurple'
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Vibe
+              </Link>
+              <Link
+                to="/kontakt"
+                className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors ${
+                  isActive('/kontakt') 
+                    ? 'text-syntax-lightPurple border-l-4 border-syntax-mediumPurple' 
+                    : 'text-gray-400 hover:text-syntax-lightPurple'
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Kontakt
+              </Link>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );

@@ -6,6 +6,7 @@ import Offline from './pages/Offline';
 import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 import Vibe from './pages/Vibe';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
           <Route path="/vibe" element={<Vibe />} />
+          <Route path="/kontakt" element={<Contact />} />
         </Routes>
       </div>
     </Router>
